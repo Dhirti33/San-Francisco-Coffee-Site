@@ -1,0 +1,280 @@
+/*** Web view ***/
+.navBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid gray;
+  height: 50px;
+  padding: 20px 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2em;
+  background-color: #faf8f0;
+  z-index: 3;
+}
+
+/* Left Nav Section */
+.navLeft {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.shopLogo {
+  height: 90%;
+  width: 50px;
+}
+
+.shopLogo > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.shopName {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  justify-content: left;
+  align-items: last baseline;
+  font-size: 1.7rem;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* right Left section */
+.navRight {
+  width: 50% auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+/* Tabs */
+.tabs {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.tabs > .tab {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tabs > .tab:hover {
+  border-bottom: 2px solid #d2b877;
+  transition: all 2ms ease-out;
+}
+
+/* Buttons */
+.buttons {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.buttons > .btn {
+  height: 2em;
+  width: 2em;
+  background-color: #f1ead5;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #d2b877;
+}
+
+.btn > svg {
+  height: 60%;
+  font-weight: 900;
+  stroke-width: 2;
+}
+
+.humberger {
+  display: none;
+  width: 10%;
+}
+
+/** Side Menu **/
+.side-menu {
+  height: 100vh;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: #d2b877;
+  gap: 2em;
+  align-items: right;
+  top: 0;
+  left: 150px;
+  right: 0;
+  bottom: 0;
+  padding: 0.5em;
+  transition: all 0.5s ease;
+}
+
+.side-menu.open {
+  display: flex;
+  z-index: 3;
+}
+
+.cancel {
+  display: flex;
+  justify-content: right;
+  align-self: center;
+  width: 100%;
+  height: auto;
+}
+
+.cancel > svg {
+  height: 50px;
+  width: 50px;
+}
+
+.Side-tabs {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.side {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-bottom: 2px solid #e1d2a6;
+}
+
+.side:hover {
+  width: 100%;
+  transform: scale(0.95);
+}
+
+/*** Responsive View ***/
+@media (max-width: 1024px) {
+  nav {
+    padding: 20px 1.5rem;
+  }
+
+  .navLeft {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .shopName {
+    font-size: calc(1.8rem - 20%);
+  }
+
+  .navRight {
+    width: 64%;
+  }
+
+  .tabs > .tab {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 40px;
+    padding: 10px 0.5em;
+    gap: 0.2em;
+  }
+  .navLeft {
+    width: 80%;
+    gap: 0.2em;
+  }
+
+  .shopName {
+    font-size: calc(1.8rem - 10%);
+  }
+
+  .navRight {
+    width: 10%;
+  }
+
+  .tabs,
+  .buttons {
+    display: none;
+  }
+
+  .humberger {
+    display: flex;
+    width: 100%;
+  }
+
+  .humberger > svg {
+    height: 100%;
+  }
+
+  .side-menu {
+    left: calc(150px + 40%);
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    height: 40px;
+    padding: 10px 0.5em;
+    gap: 0.5em;
+  }
+  .navLeft {
+    width: 85%;
+  }
+
+  .shopName {
+    font-size: calc(1.8rem - 70%);
+  }
+
+  .navRight {
+    width: 10%;
+  }
+
+  .tabs,
+  .buttons {
+    display: none;
+  }
+
+  .humberger {
+    display: flex;
+    width: 100%;
+  }
+
+  .humberger > svg {
+    height: 100%;
+  }
+
+  .side-menu {
+    left: calc(150px + 6%);
+  }
+}

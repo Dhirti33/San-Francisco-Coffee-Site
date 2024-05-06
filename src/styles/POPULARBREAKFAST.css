@@ -1,0 +1,115 @@
+.popularBreakfast {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.Label {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.popularContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.popularCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.popularCard > div {
+  margin: auto;
+}
+
+.image {
+  height: 19rem;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.imageHead {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 550;
+  text-align: left;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imageInfo {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.avocadoToast {
+  background-image: url("../assets/best1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.breakfastBurrito {
+  background-image: url("../assets/best2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.chiaPudding {
+  background-image: url("../assets/best3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*** Responsive View ***/
+@media (max-width: 1024px) {
+  .popularBreakfast {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .popularBreakfast {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .popularBreakfast {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .popularContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+  .image {
+    height: 17rem;
+    width: 100%;
+    border-radius: 15px;
+  }
+}

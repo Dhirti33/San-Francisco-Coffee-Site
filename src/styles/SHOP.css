@@ -1,0 +1,140 @@
+.coffeeShop {
+  width: 70%;
+  margin: auto;
+  height: 28rem;
+  background-image: url("../assets/shop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: first baseline;
+  text-align: left;
+  border-radius: 20px;
+  color: #faf8f0;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  gap: 0.5em;
+}
+
+.Big {
+  /* border: 1px solid blue; */
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+}
+
+.mid {
+  /* border: 1px solid blue; */
+  height: 50px;
+  font-size: 16px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text {
+  z-index: 2;
+}
+
+.btn {
+  height: 3em;
+  font-size: medium;
+  font-weight: 900;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #e1d2a6;
+  color: #351d13;
+}
+
+.full {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+/*** Responsive View ***/
+@media (max-width: 1024px) {
+  .coffeeShop {
+    justify-content: flex-end;
+    align-items: first baseline;
+    text-align: left;
+    padding: 5%;
+    gap: 0.7em;
+  }
+  .Big {
+    height: auto;
+    font-size: 2.5rem;
+  }
+
+  .mid {
+    height: auto;
+    font-size: 16 px;
+    font-weight: 600;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coffeeShop {
+    justify-content: flex-end;
+    align-items: first baseline;
+    text-align: left;
+    padding: 5%;
+    gap: 0.7em;
+  }
+  .Big {
+    height: auto;
+    font-size: 1.9rem;
+  }
+
+  .mid {
+    height: auto;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .coffeeShop {
+    justify-content: flex-end;
+    align-items: first baseline;
+    text-align: left;
+    padding: 10%;
+    gap: 0.7em;
+  }
+  .Big {
+    height: auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .mid {
+    height: auto;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .btn {
+    height: 40px;
+    font-size: 10px;
+    align-self: center;
+  }
+}

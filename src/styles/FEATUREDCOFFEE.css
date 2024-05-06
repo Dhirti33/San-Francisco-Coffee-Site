@@ -1,0 +1,103 @@
+.featuredCoffee {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.featuredContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.featuredCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.featuredCard > div {
+  margin: auto;
+}
+
+.image {
+  height: 19rem;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.imageHead {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 550;
+  text-align: left;
+}
+
+.imageInfo {
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.francisco {
+  background-image: url("../assets/featured1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Chinatown {
+  background-image: url("../assets/featured2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.missionDistrict {
+  background-image: url("../assets/featured3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*** Responsive View ***/
+@media (max-width: 1024px) {
+  .featuredCoffee {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .featuredCoffee {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .featuredCoffee {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .featuredContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+  .image {
+    height: 17rem;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
