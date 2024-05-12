@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-# React + Vite
+# SAN FRANCISCO COFFEE SITE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app was created using vite react
+Has responsiveness for the default screen sizes
 
-Currently, two official plugins are available:
+This is my first deployed web app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# San-Francisco-Coffee-Site
-coffee-site
->>>>>>> 10afaa6dc892780c464ea0d23a2a62129fbf9d2a
+Hope to work and improve on my skills 
+
+Thank You!!
